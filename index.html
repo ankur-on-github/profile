@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ankur Yadav - Portfolio</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #e1bee7 100%);
+           
+        }
+        
+
+        nav {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38beae;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            
+            cursor: pointer;
+        }
+        
+        
+        
+        .container {
+            
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        
+        .header-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            
+            text-align: center;
+            margin-bottom: 30px;
+            
+        }
+        
+        .header-card h1 {
+            font-size: 48px;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+        
+        .header-card .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .header-card .intro {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+            scroll-margin-top: 100px;
+        }
+        
+        .card h2 {
+            color: #00796b;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-left: 5px solid #26a69a;
+            padding-left: 15px;
+        }
+        
+        .card p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        
+        .skills-grid {
+            display: grid;
+            
+            gap: 25px;
+            
+        }
+        
+        .skill-item {
+            background: linear-gradient(135deg, #26a69a 0%, #00796b 100%);
+            color: white;
+            padding: 15px;
+            
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,121,107,0.3);
+        }
+        
+        
+        .project-box {
+            background: #f1f8f6;
+            padding: 20px;
+            
+            margin-bottom: 15px;
+            
+        }
+        
+        .project-box h3 {
+            color: #00796b;
+            
+        }
+        
+        
+        
+        .project-box a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        
+        
+        
+        
+        
+        
+        .hobbies-list li {
+            background: #f1f8f6;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            
+            color: #555;
+        }
+        
+        
+        .languages-list {
+            display: flex;
+            gap: 15px;
+            
+        }
+        
+        .language-badge {
+            background: #00796b;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        
+        .contact-info {
+            background: #f1f8f6;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .contact-info a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        
+        
+        
+        .footer {
+            text-align: center;
+            color: #555;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">Ankur's Portfolio</div>
+        <div class="nav-links">
+            <a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About</a>
+            <a onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'})">Education</a>
+            <a onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})">Skills</a>
+            <a onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</a>
+            <a onclick="document.getElementById('hobbies').scrollIntoView({behavior: 'smooth'})">Hobbies</a>
+            <a onclick="document.getElementById('languages').scrollIntoView({behavior: 'smooth'})">Languages</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    
+    
+    <div class="header-card">
+        <h1>ANKUR YADAV</h1>
+        <p class="subtitle">B.Tech CSE | Software Developer</p>
+        <p class="intro">Enthusiastic about software development, competitive programming, and crafting innovative solutions through efficient coding practices and algorithmic thinking.</p>
+    </div>
+    
+    
+    <div class="card" id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science student with a keen interest in software development, competitive programming, and web technologies. I thrive on solving challenging problems, participating in coding competitions, and continuously expanding my technical knowledge. My goal is to become a proficient software developer and create impactful technology solutions.</p>
+    </div>
+    
+    
+    <div class="card" id="education">
+        <h2>Education</h2>
+        <p><strong>Degree:</strong> B.Tech in Computer Science and Engineering (Core Branch)</p>
+        <p><strong>College:</strong> VIT Chennai</p>
+        <p><strong>Year:</strong> 2024 - 2028</p>
+        <br>
+        <p><strong>Class 12th:</strong> Yaduvanshi Shiksha Niketan</p>
+        <p><strong>Class 10th:</strong> Yaduvanshi Shiksha Niketan</p>
+    </div>
+    
+    <div class="card" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">C/C++</div>
+            <div class="skill-item">DSA in C++</div>
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+        </div>
+    </div>
+    
+    <div class="card" id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project-box">
+            <h3>Real-Time Crowd Management System</h3>
+            <p>
+                A system designed to monitor and manage crowd density in real-time for enhanced safety and efficiency.
+            </p>
+            <p><a href="https://github.com/Namish-Gupta/Real-Time-Crowd-Management-System" target="_blank">View on GitHub →</a></p>
+        </div>
+        
+        <div class="project-box">
+            <h3>Personal Portfolio Website</h3>
+            <p>Profile website built using HTML and CSS to showcase skills, projects, and contact details.</p>
+        </div>
+    </div>
+    
+    <div class="card" id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-list">
+            <ul>
+                <li>💻 Coding</li>
+                <li>🏸 Badminton</li>
+                <li>🐧 Switching between multiple operating systems (usually Linux distros) and trying them just for fun</li>
+                <li>🔧 Testing multiple open source softwares</li>
+                <li>📚 Learning new technical stuff</li>
+                <li>🏃 Running</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="card" id="languages">
+        <h2>Languages Known</h2>
+        <div class="languages-list">
+            <div class="language-badge">English</div>
+            <div class="language-badge">Hindi</div>
+            <div class="language-badge">Spanish</div>
+        </div>
+    </div>
+    
+    <div class="card" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:ankur.yadav2024@vitstudent.ac.in">ankur.yadav2024@vitstudent.ac.in</a></p>
+            <p><strong>Phone:</strong> +91 9034454070</p>
+            <p><strong>Location:</strong> Chennai, India</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/ankur-on-github/" target="_blank">github.com/ankur-on-github</a></p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Ankur Yadav - Portfolio Website</p>
+    </div>
+
+</div>
+
+</body>
+</html>
